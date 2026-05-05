@@ -1,15 +1,16 @@
 employees = []
+
 for i in range(3):
-    name = input("Enter Name: ")
-    eid = int(input("Enter Employee ID: "))
-    salary = float(input("Enter Salary: "))
+    name = input("Name: ")
+    eid = int(input("EID: "))
+    salary = float(input("Salary: "))
     employees.append((name, eid, salary))
-print("\nEmployee Records")
+
+print("\nEmployees:")
 for emp in employees:
     print(emp)
-highest = employees[0]
-for emp in employees:
-    if emp[2] > highest[2]:
-        highest = emp
-print("\nEmployee with Highest Salary:")
+
+highest = max(employees, key=lambda x: x[2])
+
+print("\nHighest Salary Employee:")
 print(highest)
