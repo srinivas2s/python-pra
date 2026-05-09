@@ -17,4 +17,5 @@ venv/
 Thumbs.db
 
 #txt files
+list/
 *.txt
