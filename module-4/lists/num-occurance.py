@@ -3,7 +3,6 @@ data = file.read()
 file.close()
 
 digits = set()
-print(digits)
 special = {}
 
 for ch in data:
