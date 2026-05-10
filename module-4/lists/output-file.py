@@ -1,13 +1,12 @@
 
 file = open("ip.txt", "r")
-data = file.read()
-lines = data.split('\n')
+lines = file.readlines()
 file.close()
 
 
 outfile = open("output.txt", "w")
 for i in range(len(lines)):
     if i % 2 == 0:
-        outfile.write(lines[i] + '\n')
+        outfile.write(lines[i])
 outfile.close()
 print("Odd-numbered lines copied successfully.")
