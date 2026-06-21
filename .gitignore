@@ -1,4 +1,17 @@
-.idea/.gitignore
-.idea/modules.xml
-.idea/python-pra.iml
-.idea/vcs.xml
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.env/
+
+# IDE files
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
